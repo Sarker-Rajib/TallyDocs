@@ -1,7 +1,7 @@
 @import url(../abstracts/_mixins.scss);
 
 .header{
-   padding: 5px;
+   padding: 5px 0;
 
    .navbar-brand{
       @media screen and (max-width: 385px) {
@@ -20,6 +20,6 @@
             border-bottom: 2px solid $color-secondary;
          }
       }
-      }
+   }
 
 }
