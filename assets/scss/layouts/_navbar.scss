@@ -1,0 +1,25 @@
+@import url(../abstracts/_mixins.scss);
+
+.header{
+   padding: 5px;
+
+   .navbar-brand{
+      @media screen and (max-width: 385px) {
+         display: block;
+         max-width: 100px;
+      }
+   }
+   .navbar-nav{
+      .nav-link{
+         font-family: 'Montserrat';
+         @include font-style(16px, 500, $color-primary);
+         margin-right: 18px;
+       
+         &.active {
+            @include font-style(16px, 500, $color-secondary);
+            border-bottom: 2px solid $color-secondary;
+         }
+      }
+      }
+
+}

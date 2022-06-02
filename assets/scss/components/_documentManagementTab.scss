@@ -1,0 +1,62 @@
+.document-mangagement-section{
+   padding: 50px 0;
+   background: rgba($color-secondary, 0.05);
+
+
+   .nav-link{
+      position: relative;
+      font-family: 'Montserrat';
+      @include font-style(28px, 600, rgba($color-black, 0.3)); 
+      border-radius: 0;
+      padding-bottom: 15px;
+      letter-spacing: -0.015em;
+     
+      &::after{
+         content:"";
+         position: absolute;
+         height: 3px;
+         width: 0%;
+         background:  $color-primary;
+         top: 100%;
+         left: 0;
+         transition: all 0.4s ease-in-out;
+      }
+      
+      &.active{
+         @include font-style(28px, 700, $color-primary);
+         background: none;
+
+         &::after{
+            width: 100%;
+         }
+      }
+      
+      &:hover{
+         @include font-style(28px, 700, $color-primary);
+         background: none;
+
+         &::after{
+            width: 100%;
+         }
+      }
+   }
+
+   .tab-content{
+      .tab-pane{
+         h3{
+            font-family: 'Montserrat';
+            @include font-style(46px, 400, $color-black); 
+            line-height: 60px;
+            text-align: center;
+            letter-spacing: -0.015em;
+            padding-bottom: 35px;
+         }
+
+         p{
+            font-family: 'Montserrat';
+            @include font-style(24px, 400, $color-black); 
+            letter-spacing: -0.015em;
+         }
+      }
+   }
+}

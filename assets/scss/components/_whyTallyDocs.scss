@@ -1,0 +1,26 @@
+.why-tallydocs{
+   background: #f8f8f8;
+   padding: 50px 0;
+
+   h2{
+      font-family: 'Lora';
+      @include font-style(60px, 600, $color-primary);
+      line-height: 50px;
+      padding-bottom: 45px;
+   }
+   
+   ul{
+      padding-bottom: 50px;
+      li{
+         font-family: 'Montserrat';
+         @include font-style(32px, 400, $color-black);
+         line-height: 50px;
+      }
+   }
+   
+   a{
+      font-family: 'Montserrat';
+      @include font-style(26px, 500, $color-white);
+      letter-spacing: -0.015em;
+   }
+}

@@ -1,0 +1,53 @@
+.user-input-form{
+   padding: 80px 0; 
+
+   .header{
+      h2{
+         @include font-style(40px, 700, $color-black);
+
+         span{
+            @include font-style(40px, 700, $color-tilt);
+         }
+
+         border-left: 5px solid rgba($color-secondary, 0.35);
+      }
+
+      p{
+         @include font-style(18px, 500, rgba($color-black, 0.6));
+
+      }
+
+      a{
+         @include font-style(48px, 700, $color-black);
+         line-height: 80px;
+         position: relative;
+         transition: all 0.3s ease-in-out;
+
+         &::after{
+            content:"";
+            position: absolute;
+            height: 3px;
+            width: 0%;
+            background:  $color-primary;
+            top: 100%;
+            left: 0;
+            transition: all 0.4s ease-in-out;
+         }
+         
+         &:hover{
+            color: $color-primary;
+   
+            &::after{
+               width: 100%;
+            }
+         }
+      }
+   }
+
+   .input-section{
+      .form-control {
+         background: rgba(0, 0, 0, 0.03);
+         border: none;
+      }
+   }
+}
