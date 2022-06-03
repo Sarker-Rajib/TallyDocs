@@ -1,17 +1,21 @@
 .why-tallydocs{
    background: #f8f8f8;
-   padding: 60px 0;
+   padding: 60px 0 70px;
    
    ul{
       padding: 50px 0;
       li{
+         display: flex;
          font-family: 'Montserrat';
          @include font-style(30px, 400, $color-black);
-         line-height: 50px;
+         margin-bottom: 10px;
 
          @media screen and (max-width: 991px){
             @include font-style(22px, 400, $color-black);
-            line-height: 35px;
+         }
+
+         span{
+            margin-right: 15px;
          }
 
          img{

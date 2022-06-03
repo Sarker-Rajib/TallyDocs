@@ -21,6 +21,7 @@
          font-family: 'Montserrat';
          @include font-style(82px, 900, $color-primary);
          line-height: 100px;
+         text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.25);
 
          @media screen and (max-width: 767px) {
             @include font-style(50px, 900, $color-primary);
@@ -35,10 +36,25 @@
       p{
          @include font-style(16px, 400, $color-primary);
          padding-top: 10px;
+         text-shadow: 3px 4px 8px rgba(0, 0, 0, 0.25);
       }
 
       .button-group{
          padding-top: 20px;
+         .btn{
+            font-size: 18px;
+            &:not(:last-child){
+               margin-right: 50px;
+
+               @media(max-width: 550px) {
+                  margin-right: 5px!important;
+               }
+            }
+
+            @media(max-width: 550px) {
+               padding: 9px;
+            }
+         }
       }
    }
 }

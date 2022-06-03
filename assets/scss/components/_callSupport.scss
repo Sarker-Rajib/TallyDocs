@@ -17,11 +17,23 @@
             transform: scale(1.0);
          }
       }
+
+      .call-header{
+         font-family: 'Lora';
+         @include font-style(62px, 700, $color-primary); 
+         
+         @media screen and (max-width: 991px) {
+            @include font-style(40px, 700, $color-primary);         
+         }
+
+         @media screen and (max-width: 370px) {
+            @include font-style(35px, 700, $color-primary);         
+         }
+      }
       
       a{
-         position: relative;
          font-family: 'Montserrat';
-         @include font-style(60px, 600, $color-secondary); 
+         @include font-style(62px, 600, $color-secondary); 
          
          @media screen and (max-width: 991px) {
             @include font-style(40px, 600, $color-secondary); 
@@ -31,22 +43,10 @@
             @include font-style(34px, 600, $color-secondary); 
          }
 
-         &::after{
-            content:"";
-            position: absolute;
-            height: 3px;
-            width: 0%;
-            background:  $color-secondary;
-            top: 100%;
-            left: 0;
-            transition: all 0.4s ease-in-out;
-         }
+         transition: all 0.3s ease-in-out;
          
          &:hover{
-               
-            &::after{
-               width: 100%;
-            }
+            color: $color-primary;
          }
       }
    }

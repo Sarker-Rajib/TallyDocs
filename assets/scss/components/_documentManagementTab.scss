@@ -1,48 +1,57 @@
 .document-mangagement-section{
-   padding: 50px 0;
+   padding: 50px 0 70px;
    background: rgba($color-secondary, 0.05);
 
 
-   .nav-link{
-      position: relative;
-      font-family: 'Montserrat';
-      @include font-style(28px, 600, rgba($color-black, 0.3)); 
-      border-radius: 0;
-      padding-bottom: 15px;
-      letter-spacing: -0.015em;
-     
-      &::after{
-         content:"";
-         position: absolute;
-         height: 3px;
-         width: 0%;
-         background:  $color-primary;
-         top: 100%;
-         left: 0;
-         transition: all 0.4s ease-in-out;
-      }
-      
-      &.active{
-         @include font-style(28px, 700, $color-primary);
-         background: none;
 
+   .nav-pills{
+      padding-bottom: 25px;
+      .nav-link{
+         position: relative;
+         font-family: 'Montserrat';
+         @include font-style(28px, 600, rgba($color-black, 0.3)); 
+         border-radius: 0;
+         padding-bottom: 9px;
+        
          &::after{
-            width: 100%;
+            content:"";
+            position: absolute;
+            height: 3px;
+            width: 0%;
+            background:  $color-primary;
+            top: 100%;
+            left: 0;
+            transition: all 0.4s ease-in-out;
          }
-      }
-      
-      &:hover{
-         @include font-style(28px, 700, $color-primary);
-         background: none;
-
-         &::after{
-            width: 100%;
+         
+         &.active{
+            @include font-style(28px, 700, $color-primary);
+            background: none;
+   
+            &::after{
+               width: 100%;
+            }
+         }
+         
+         &:hover{
+            @include font-style(28px, 700, $color-primary);
+            background: none;
+   
+            &::after{
+               width: 100%;
+            }
          }
       }
    }
 
    .tab-content{
       .tab-pane{
+         img{
+            @media screen and (min-width: 992px){
+               padding-right: 60px;
+            }
+         }
+
          h3{
             font-family: 'Montserrat';
             @include font-style(46px, 400, $color-black); 

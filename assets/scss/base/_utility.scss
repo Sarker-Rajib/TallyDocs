@@ -13,10 +13,4 @@
    @media screen and (max-width: 991px) {
       @include font-style(40px, 700, $color-primary);         
    }
-
-   &.call-support{
-      @media screen and (max-width: 370px) {
-         @include font-style(35px, 700, $color-primary);         
-      }
-   }
 }
