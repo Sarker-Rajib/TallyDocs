@@ -14,10 +14,31 @@
          font-family: 'Montserrat';
          @include font-style(16px, 500, $color-primary);
          margin-right: 18px;
+         transition: all 0.4s ease-in-out;
+         position: relative;
        
          &.active {
             @include font-style(16px, 500, $color-secondary);
             border-bottom: 2px solid $color-secondary;
+         }
+
+         &::after{
+            content:"";
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            background:  $color-secondary;
+            top: 100%;
+            left: 0;
+            transition: all 0.3s ease-in-out;
+         }
+         
+         &:hover{
+            color: $color-secondary;
+   
+            &::after{
+               width: 100%;
+            }
          }
       }
    }

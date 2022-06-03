@@ -1,3 +1,26 @@
 .video-content{
    padding: 100px 0;
+
+   .main-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      .playfield{
+         width: 80%;
+      }
+   }
+
+   // .thumbnil{
+   //    position: absolute;
+   //    left: 50%;
+   //    transform: translateX(-50%);
+   //    top: 80%;
+
+   //    .thumb{
+   //       width: 320px;
+   //       height: 212px;
+   //       overflow: hidden;
+   //    }
+   // }
 }
