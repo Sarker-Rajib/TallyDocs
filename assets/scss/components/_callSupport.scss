@@ -22,9 +22,13 @@
          position: relative;
          font-family: 'Montserrat';
          @include font-style(60px, 600, $color-secondary); 
-
+         
          @media screen and (max-width: 991px) {
             @include font-style(40px, 600, $color-secondary); 
+         }
+         
+         @media screen and (max-width: 370px) {
+            @include font-style(34px, 600, $color-secondary); 
          }
 
          &::after{
