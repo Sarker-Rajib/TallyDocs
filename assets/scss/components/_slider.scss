@@ -28,3 +28,113 @@
    }
 }
 
+.testimonial{
+   background: #f6f2ed;
+   padding: 50px 0 80px;
+
+   .section-header{
+      padding-bottom: 35px;
+      h6{
+         font-size: 14px;
+         padding-bottom: 15px;
+         color: #ABABAB;
+      }
+      h2{
+         font-size: 40px;
+
+         span{
+            color: $color-tilt;
+         }
+      }
+   }
+   
+   .Swiper {
+      overflow: hidden;
+
+      .swiper-slide {
+         font-size: 18px;
+         background: #fff;
+         border-radius: 5px;
+         width: 40%;
+         position: relative;
+         
+   
+         /* Center slide text vertically */
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: -webkit-flex;
+         display: flex;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         -webkit-justify-content: center;
+         justify-content: center;
+         -webkit-box-align: center;
+         -ms-flex-align: center;
+         -webkit-align-items: center;
+         align-items: center;
+
+         
+         &::after{
+            content:"";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f6f2ed88;
+            z-index: 2;
+         }
+
+         &-active::after {
+            display: none;
+         }
+
+         .swiper-slide-container{
+            padding: 50px 40px;
+            overflow: hidden;
+            width: 100%;
+
+            .testimonial-subject{
+               font-size: 18px;
+               margin-bottom: 15px;
+            }
+
+            .author-info{
+               display: flex;
+               align-items: center;
+               margin-top: 20px;
+            }
+   
+            .testimonial-slider{
+               &__text{
+                  font-size: 18px;
+                  color: $color-tilt;
+               }
+
+               &__media{
+                  height: 70px;
+                  width: 70px;
+                  background: #BDBDBD;
+                  border-radius: 50%;
+                  overflow: hidden;
+                  margin-right: 25px;
+               }
+
+               &__author{
+                  .name{
+                     font-size: 18px;
+                  }
+
+                  .designation{
+                     font-size: 14px;
+                  }
+               }
+            }
+         }
+      }
+   }
+   
+   .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+      bottom: auto;
+   }
+}

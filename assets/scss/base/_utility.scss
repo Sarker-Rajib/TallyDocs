@@ -4,3 +4,14 @@
       width: 50%;
    }
 }
+
+.section-header{
+
+   font-family: 'Lora';
+   @include font-style(60px, 700, $color-primary); 
+   
+   @media screen and (max-width: 991px) {
+      @include font-style(40px, 700, $color-primary);         
+   }
+
+}
