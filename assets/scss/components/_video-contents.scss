@@ -1,6 +1,10 @@
 .video-content{
    padding: 100px 0;
 
+   @media screen and (max-width: 767px){
+      padding: 40px 0;
+   }
+
    .main-content{
       display: flex;
       align-items: center;
@@ -11,16 +15,42 @@
       }
    }
 
-   // .thumbnil{
-   //    position: absolute;
-   //    left: 50%;
-   //    transform: translateX(-50%);
-   //    top: 80%;
+   .thumbnil{
+      position: relative;
+      margin-top: -60px;
+      z-index: 999;
+      overflow: hidden;
+    
+      .thumb{
+         overflow: hidden;
+         width: 280px;
+         height: 212px;
+         position: relative;
+         border: 1px solid $color-tilt;
 
-   //    .thumb{
-   //       width: 320px;
-   //       height: 212px;
-   //       overflow: hidden;
-   //    }
-   // }
+         .play-btn{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            i{
+               font-size: 35px;
+               color: $color-white;
+               border-radius: 50%;
+               background: $color-tilt;
+               height: 60px;
+               width: 60px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+
+            .fa-play:before {
+               margin-right: -5px;
+               margin-top: -2px;
+            }
+         }
+      }
+   }
 }

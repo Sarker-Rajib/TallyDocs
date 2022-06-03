@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TallyDocs</title>
   <link rel='shortcut icon' href='assets/images/fav-icon.png' type='image/x-icon'>
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/vendor/Swiper-slider/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -288,21 +289,28 @@
               <iframe src="https://www.youtube.com/embed/2cdxTXZ5_6U" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-<!-- 
-          <div class="thumbnil">
+
+          <div class="thumbnil d-none d-md-block">
             <div class="row thum-container">
-              <div class="col-md-6">
+              <div class="col-md-6 d-flex justify-content-end">
                 <div class="thumb">
+                  <button type="button" class="btn play-btn">
+                    <i class="fas fa-play"></i>
+                  </button>
                   <img src="assets/images/tab-image.png" alt="thumb">
                 </div>
               </div>
-              <div class="col-md-6 d-none d-md-block">
+              <div class="col-md-6">
                 <div class="thumb">
+                  <button type="button" class="btn play-btn">
+                    <i class="fas fa-play"></i>
+                  </button>
+
                   <img src="assets/images/tab-image.png" alt="thumb">
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
@@ -388,38 +396,12 @@
           <div class="swiper-slide">
             <div class="swiper-slide-container">
               <h6 class="testimonial-subject">
-                Installation and licensing experience is
-                'WoW'!
-              </h6>
-              <div class="testimonial-slider__text">
-                We are using TallyDocs in Tally
-                since 2015 and we are fully satisfied with the performance of this
-                software.
-              </div>
-              <div class="author-info">
-                <div class="testimonial-slider__media">
-                    
-                </div>
-                <div class="testimonial-slider__author">
-                    <h6 class="name">Mr. Anurag</h6>
-                    <span class="designation">
-                        Age Professional Services Pvt
-                        Ltd
-                    </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="swiper-slide-container">
-              <h6 class="testimonial-subject">
                   It's impressive how there is a focus on
                   the 'Tally-way'!
               </h6>
               <div class="testimonial-slider__text">
                   TallyDocs has enabled important
-                  functionaltiy of attaching documents with vouchers. This has saved
-                  us hundreds of manhours in searching for old documents.
+                  functionaltiy of attaching documents with vouchers. This has saved us hundreds of manhours in searching for old documents.
               </div>
               <div class="author-info">
                 <div class="testimonial-slider__media">
@@ -428,7 +410,7 @@
                 <div class="testimonial-slider__author">
                     <h6 class="name">Tarun Hemrajani</h6>
                     <span class="designation">
-                        <a href="#">www.jjbricks.com</a> / CA
+                       / <a href="#">www.jjbricks.com</a> / CA
                     </span>
                 </div>
               </div>
@@ -451,7 +433,7 @@
                   </div>
                   <div class="testimonial-slider__author">
                       <h6 class="name">Sunil Gupta</h6>
-                      <span class="designation">Director of a non-profit</span>
+                      <span class="designation">/ Director of a non-profit</span>
                   </div>
               </div>
             </div>
@@ -468,8 +450,31 @@
                 <div class="testimonial-slider__author">
                     <h6 class="name">Ram Iyer</h6>
                     <span class="designation">
-                        <a href="#">www.geetharams.com</a> /
+                        / <a href="#">www.geetharams.com</a> /
                         Proprietor
+                    </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-slide-container">
+              <h6 class="testimonial-subject">
+                Installation and licensing experience is
+                'WoW'!
+              </h6>
+              <div class="testimonial-slider__text">
+                We are using TallyDocs in Tally
+                since 2015 and we are fully satisfied with the performance of this software.
+              </div>
+              <div class="author-info">
+                <div class="testimonial-slider__media">
+                    
+                </div>
+                <div class="testimonial-slider__author">
+                    <h6 class="name">Mr. Anurag</h6>
+                    <span class="designation">
+                       / Age Professional Services Pvt Ltd
                     </span>
                 </div>
               </div>
@@ -554,9 +559,7 @@
   <!-- all codes for ===***footer***=== starts from here -->
   <footer class="footer">
     <div class="container">
-
       <div class="row top-footer-wrapper">
-
         <div class="col-lg-4 col-md-6 col-sm-6 address text-center text-sm-start p-3 p-sm-0">
           <div class="footer-logo">
             <img src="assets/images/brand-logo.png" class="img-fluid" alt="brand-logo">
@@ -603,12 +606,20 @@
         </div>
       </div>
 
-      <div class="row footer-bottom">
-        <div class="col-md-6 text-center pt-3 pt-md-0">
+      <div class="row footer-bottom align-items-end">
+        <div class="col-md-6 text-center text-md-start pt-3 pt-md-0">
           <p>© 2022 EAI Square Technologies LLP. All Rights Reserved.</p>
         </div>
-        <div class="col-md-6 text-center pt-3 pt-md-0 text-md-end">
-          icom
+        <div class="col-md-6 pt-3 pt-md-0">
+          <div class="text-center text-md-end me-md-4">
+            <ul class="foot-social-links justify-content-center justify-content-md-end ps-0">
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
 
