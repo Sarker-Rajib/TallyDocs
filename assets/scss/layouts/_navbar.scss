@@ -1,7 +1,7 @@
 @import url(../abstracts/_mixins.scss);
 
 .header{
-   padding: 8px 0;
+   padding: 10px 0;
 
 
    .navbar-brand{
@@ -18,7 +18,7 @@
          margin-right: 18px;
          transition: all 0.4s ease-in-out;
          position: relative;
-         padding-bottom: 5px;
+         padding-bottom: 2px;
        
          &.active {
             @include font-style(16px, 500, $color-secondary);
