@@ -3,11 +3,16 @@
    padding: 50px 0;
    
    ul{
-      padding-bottom: 50px;
+      padding: 50px 0;
       li{
          font-family: 'Montserrat';
-         @include font-style(32px, 400, $color-black);
+         @include font-style(30px, 400, $color-black);
          line-height: 50px;
+
+         @media screen and (max-width: 991px){
+            @include font-style(22px, 400, $color-black);
+            line-height: 35px;
+         }
       }
    }
    

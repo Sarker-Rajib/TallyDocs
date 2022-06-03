@@ -1,9 +1,17 @@
 .user-input-form{
    padding: 80px 0; 
 
+   @media screen and (max-width: 767px){
+      padding: 50px 0; 
+
+   }
+
    .header{
       h2{
          @include font-style(40px, 700, $color-black);
+         @media screen and (max-width: 575px){
+            @include font-style(30px, 700, $color-black);
+         }
 
          span{
             @include font-style(40px, 700, $color-tilt);
@@ -17,11 +25,16 @@
 
       }
 
-      a{
+      .telNumber{
          @include font-style(48px, 700, $color-black);
          line-height: 80px;
          position: relative;
          transition: all 0.3s ease-in-out;
+
+         @media screen and (max-width: 575px){
+            @include font-style(30px, 700, $color-black);
+            line-height: 50px;
+         }
 
          &::after{
             content:"";
