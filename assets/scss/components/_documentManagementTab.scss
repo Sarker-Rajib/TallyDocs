@@ -6,15 +6,16 @@
 
    .nav-pills{
       padding-bottom: 25px;
-      display: flex;
-      justify-content: space-between;
-      overflow-X: scroll;
+      
+   //    display: flex !important;
+   //    justify-content: space-between !important;
+   //    overflow-X: scroll !important;
 
-      &::-webkit-scrollbar {
-         display: none;
-         scrollbar-width: none;
-         -ms-overflow-style: none;
-     }
+   //    &::-webkit-scrollbar {
+   //       display: none;
+   //       scrollbar-width: none;
+   //       -ms-overflow-style: none;
+   //   }
      
 
       .nav-link{
