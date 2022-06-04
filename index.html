@@ -290,17 +290,20 @@
       <div class="main-content">
         <div class="playfield w-md-75 m-auto">
           <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/2cdxTXZ5_6U" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="video-player" width="" height="" allowfullscreen></iframe>
+            <video width="100%" id="video-player" controls>
+              <source  src="assets/video/mov_bbb.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
           </div>
 
           <div class="thumbnil">
             <div class="hstack gap-2 col-8 offset-2">
-              <button type="button" class="btn p-0" onclick="videoPlay(this)" value="https://www.youtube.com/embed/Ek7luM-vSFQ">
+              <button type="button" class="btn p-0" onclick="videoPlay(this)" value="assets/video/mov_bbb.mp4">
                 <div class="thumb">
                   <img class="img-fluid w-100" src="assets/images/video-thumbnail.webp" alt="thumb" width="100" height="auto">
                 </div>
               </button>
-              <button type="button" onclick="videoPlay(this)" value="https://www.youtube.com/embed/t0Q2otsqC4I" class="btn p-0">
+              <button type="button" onclick="videoPlay(this)" value="assets/video/Nature-Beautiful.mp4" class="btn p-0">
                 <div class="thumb">
                   <img class="img-fluid w-100" src="assets/images/video-thumbnail-2.webp" alt="thumb" width="100" height="auto">
                 </div>
