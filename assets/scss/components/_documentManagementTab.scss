@@ -6,12 +6,25 @@
 
    .nav-pills{
       padding-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
+      overflow-X: scroll;
+
+      &::-webkit-scrollbar {
+         display: none;
+         scrollbar-width: none;
+         -ms-overflow-style: none;
+     }
+     
+
       .nav-link{
          position: relative;
          font-family: 'Montserrat';
          @include font-style(28px, 600, rgba($color-black, 0.3)); 
          border-radius: 0;
          padding-bottom: 9px;
+         margin-right: 30px;
+        
         
          &::after{
             content:"";
