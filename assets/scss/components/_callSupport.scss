@@ -5,6 +5,10 @@
       padding-bottom: 0;
    }
 
+   .section-header {
+      font-weight: 700;
+   }
+
    .inner-contents{
       background: #F9F9F9;
       @media screen and (max-width: 767px) {
@@ -20,34 +24,34 @@
 
       .call-header{
          font-family: 'Lora';
-         @include font-style(62px, 700, $color-primary); 
+         font-size: 62px;
+         font-weight: 700;
+         color: $color-primary;
          
          @media screen and (max-width: 991px) {
-            @include font-style(40px, 700, $color-primary);         
+            font-size: 40px;        
          }
 
          @media screen and (max-width: 370px) {
-            @include font-style(35px, 700, $color-primary);         
+            font-size: 35px;      
          }
       }
       
-      a{
+      .phone-number{
          font-family: 'Montserrat';
-         @include font-style(62px, 600, $color-secondary); 
+         font-size: 62px;
+         font-weight: 600;
+         color: $color-secondary;
          
-         @media screen and (max-width: 991px) {
-            @include font-style(40px, 600, $color-secondary); 
+         @media screen and (max-width: 991px) and (min-width: 376px) {
+            font-size: 40px; 
          }
          
-         @media screen and (max-width: 370px) {
-            @include font-style(34px, 600, $color-secondary); 
+         @media screen and (max-width: 375px) {
+            font-size: 34px;
          }
 
          transition: all 0.3s ease-in-out;
-         
-         &:hover{
-            color: $color-primary;
-         }
       }
    }
 }

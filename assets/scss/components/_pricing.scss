@@ -27,7 +27,9 @@
          }
 
          .description{
-            @include font-style(18px, 400, $color-black);
+            font-size: 18px;
+            font-weight: 400;
+            color: $color-black;
             line-height: 40px;
          }
 
@@ -39,11 +41,15 @@
             h4{
                font-family: 'Lora';
                padding-bottom: 55px;
-               @include font-style(32px, 600, $color-secondary);
+               font-size: 32px;
+               font-weight: 600;
+               color: $color-secondary;
             }
 
             .price{
-               @include font-style(48px, 600, $color-secondary);
+               font-size: 48px;
+               font-weight: 600;
+               color: $color-secondary;
             }
          }
 
@@ -53,17 +59,23 @@
             h4{
                font-family: 'Lora';
                padding-bottom: 55px;
-               @include font-style(32px, 600, $color-primary);
+               font-size: 32px;
+               font-weight: 600;
+               color: $color-primary;
             }
 
             .price{
-               @include font-style(48px, 600, $color-primary);
+               font-size: 48px;
+               font-weight: 600;
+               color: $color-primary;
                position: relative;
                display: inline-block;
 
                &::before{
                   content: "INR";
-                  @include font-style(16px, 400, #BEB9B9);
+                  font-size: 16px;
+                  font-weight: 400;
+                  color: #BEB9B9;
                   font-style: normal;
                   line-height: 50px;
                   position: absolute;
@@ -74,7 +86,9 @@
 
                &::after{
                   content: "one time";
-                  @include font-style(16px, 400, #BEB9B9);
+                  font-size: 16px;
+                  font-weight: 400;
+                  color: #BEB9B9;
                   font-style: normal;
                   position: absolute;
                   bottom: 10px;

@@ -7,11 +7,13 @@
       li{
          display: flex;
          font-family: 'Montserrat';
-         @include font-style(30px, 400, $color-black);
+         font-size: 30px;
+         font-weight: 400;
+         color: $color-black;
          margin-bottom: 10px;
 
          @media screen and (max-width: 991px){
-            @include font-style(22px, 400, $color-black);
+            font-size: 22px;
          }
 
          span{
@@ -32,7 +34,8 @@
    
    a{
       font-family: 'Montserrat';
-      @include font-style(26px, 500, $color-white);
-      letter-spacing: -0.015em;
+      font-size: 26px;
+      font-weight: 500;
+      color: $color-white;
    }
 }

@@ -3,23 +3,16 @@
     freeMode: true,
     autoplay: true,
     slidesPerView: 6,
-    centeredSlides: true,
     loop: true,
     speed: 1500,
     breakpoints: {
       // when window width is >= 320px
       320: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 50,
       },
-
-      // when window width is >= 640px
-      640: {
-      slidesPerView: 3,
-      spaceBetween: 50
-      },
-      // when window width is >= 991px
-      991: {
+      // when window width is >= 992px
+      992: {
       slidesPerView: 4,
       spaceBetween: 50
       },
@@ -59,3 +52,12 @@
     }
   });
 }
+
+// video-player start
+function videoPlay(element){
+  const videoPlayer = document.getElementById('video-player');
+  const url = element.value;
+  videoPlayer.src = url;
+  videoPlayer.src += "?autoplay=1";
+}
+// video-player end

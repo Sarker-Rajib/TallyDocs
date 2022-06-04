@@ -5,22 +5,26 @@
       padding: 40px 0;
    }
 
-   .main-content{
-      display: flex;
-      align-items: center;
-      justify-content: center;
+   // .main-content{
+   //    display: flex;
+   //    align-items: center;
+   //    justify-content: center;
       
-      .playfield{
-         width: 80%;
-      }
-   }
+   //    .playfield{
+   //       width: 80%;
+   //    }
+   // }
 
    .thumbnil{
       position: relative;
-      margin-top: -105px;
+      margin-top: -10%;
       z-index: 999;
       overflow: hidden;
-    
+   }
 
+   .btn {
+      &:focus {
+         box-shadow: none;
+      }
    }
 }

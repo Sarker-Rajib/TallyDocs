@@ -20,7 +20,7 @@
       width: 100%;
       object-fit: cover;
       margin: 0 5px;
-      opacity: 0.25;
+      opacity: 0.5;
       filter: grayscale;
       filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
       filter: rgba(128, 128, 128, 0.37); /* IE6-9 */
@@ -39,24 +39,22 @@
 .testimonial{
    background: #f6f2ed;
    padding: 50px 0 90px;
+   font-family: 'Montserrat', sans-serif;
 
    .section-header{
       padding-bottom: 55px;
       h6{
-         font-family: 'sans serif';
+         font-family: 'Montserrat', sans-serif;
          font-size: 14px;
          padding-bottom: 15px;
          color: #ABABAB;
       }
       h2{
+         font-family: 'Montserrat', sans-serif;
          font-size: 40px;
-         font-family: 'sans serif';
-
 
          span{
-            color: $color-tilt;
-            font-family: 'sans serif';
-
+            color: $color-blue-light;
          }
       }
    }
@@ -113,7 +111,6 @@
             .testimonial-subject{
                font-size: 18px;
                margin-bottom: 15px;
-               font-family: 'sans serif';
 
             }
 
@@ -126,8 +123,7 @@
             .testimonial-slider{
                &__text{
                   font-size: 18px;
-                  color: $color-tilt;
-                  font-family: 'sans serif';
+                  color: $color-blue-light;
                }
 
                &__media{
@@ -142,13 +138,11 @@
                &__author{
                   .name{
                      font-size: 18px;
-                     font-family: 'sans serif';
                   }
 
                   .designation{
                      font-size: 14px;
                      font-family: 'sans serif';
-
                   }
                }
             }
