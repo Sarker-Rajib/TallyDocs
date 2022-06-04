@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container d-flex align-items-center justify-content-between">
             <div>
-              <a class="navbar-brand py-1" href="#"> <img class="img-fluid" src="assets/images/brand-logo.webp" alt="image-icon"> </a>
+              <a class="navbar-brand py-1" href="#"> <img class="img-fluid" src="assets/images/brand-logo.webp" alt="image-icon" width="100" height="auto"> </a>
             </div>
 
             <div class="collapse navbar-collapse">
@@ -50,7 +50,7 @@
         </nav>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
           <div class="offcanvas-header">
-            <img src="assets/images/brand-logo.webp" class="img-fluid" alt="icon">
+            <img src="assets/images/brand-logo.webp" class="img-fluid" alt="icon" width="100" height="auto">
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
@@ -79,7 +79,7 @@
   <section class="banner">
     <div class="content position-relative">
       <img class="img-fluid w-100 d-none d-md-block" src="assets/images/banner-image.webp" 
-      alt="banner-image">
+      alt="banner-image" width="100" height="auto">
 
       <div class="text">
         <div class="text-center">
@@ -102,12 +102,12 @@
     <div class="container">
       <div class="swiper brandSwiper">
         <div class="swiper-wrapper d-flex align-items-center">
-          <div class="swiper-slide"><a href="#"><img class="img-fluid" src="assets/images/slider-image/1.png" alt="aaa"></a></div>
-          <div class="swiper-slide"><a href="#"><img class="img-fluid" src="assets/images/slider-image/2.png" alt="aaa"></a></div>
-          <div class="swiper-slide"><a href="#"><img class="img-fluid" src="assets/images/slider-image/3.png" alt="aaa"></a></div>
-          <div class="swiper-slide"><a href="#"><img class="img-fluid" src="assets/images/slider-image/4.png" alt="aaa"></a></div>
-          <div class="swiper-slide"><a href="#"><img class="img-fluid" src="assets/images/slider-image/5.png" alt="aaa"></a></div>
-          <div class="swiper-slide"><a href="#"><img class="img-fluid" src="assets/images/slider-image/6.png" alt="aaa"></a></div>
+          <div class="swiper-slide"><a href="#"><img class="img-fluid" width="100" height="auto" src="assets/images/slider-image/1.png" alt="aaa"></a></div>
+          <div class="swiper-slide"><a href="#"><img class="img-fluid" width="100" height="auto" src="assets/images/slider-image/2.png" alt="aaa"></a></div>
+          <div class="swiper-slide"><a href="#"><img class="img-fluid" width="100" height="auto" src="assets/images/slider-image/3.png" alt="aaa"></a></div>
+          <div class="swiper-slide"><a href="#"><img class="img-fluid" width="100" height="auto" src="assets/images/slider-image/4.png" alt="aaa"></a></div>
+          <div class="swiper-slide"><a href="#"><img class="img-fluid" width="100" height="auto" src="assets/images/slider-image/5.png" alt="aaa"></a></div>
+          <div class="swiper-slide"><a href="#"><img class="img-fluid" width="100" height="auto" src="assets/images/slider-image/6.png" alt="aaa"></a></div>
         </div>
       </div>
     </div>
@@ -121,7 +121,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <img src="assets/images/call-support.webp" class="img-fluid" alt="CALL">
+            <img src="assets/images/call-support.webp" class="img-fluid" width="100" height="auto" alt="CALL">
           </div>
           <div class="col-md-7 offset-md-1 ps-3">
             <div class="d-flex h-100 align-items-center w-100 py-4 py-md-0">
@@ -282,6 +282,37 @@
     </div>
   </section>
   <!-- all codes for ===***mangagement-section***=== ended -->
+
+  
+  <!-- all codes for ===***Video-content***=== starts from here -->
+  <section class="video-content">
+    <div class="container">
+      <div class="main-content">
+        <div class="playfield w-md-75 m-auto">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/2cdxTXZ5_6U" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" id="video-player" width="" height="" allowfullscreen></iframe>
+          </div>
+
+          <div class="thumbnil">
+            <div class="hstack gap-2 col-8 offset-2">
+              <button type="button" class="btn p-0" onclick="videoPlay(this)" value="https://www.youtube.com/embed/Ek7luM-vSFQ">
+                <div class="thumb">
+                  <img class="img-fluid w-100" src="assets/images/video-thumbnail.webp" alt="thumb" width="100" height="auto">
+                </div>
+              </button>
+              <button type="button" onclick="videoPlay(this)" value="https://www.youtube.com/embed/t0Q2otsqC4I" class="btn p-0">
+                <div class="thumb">
+                  <img class="img-fluid w-100" src="assets/images/video-thumbnail-2.webp" alt="thumb" width="100" height="auto">
+                </div>
+              </button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- all codes for ===***Video-content***=== ended -->
 
 
   <!-- all codes for ===***why-tallydocs***=== starts from here -->
@@ -528,7 +559,7 @@
       <div class="row top-footer-wrapper">
         <div class="col-lg-4 col-md-6 col-sm-6 address text-center text-sm-start p-3 p-sm-0">
           <div class="footer-logo">
-            <img src="assets/images/brand-logo.webp" class="img-fluid" alt="brand-logo">
+            <img src="assets/images/brand-logo.webp" class="img-fluid" alt="brand-logo" width="100" height="auto">
           </div>
           <ul class="ps-0 pt-3">
             <p>302, West Block, Upkar Meadows, <br>
